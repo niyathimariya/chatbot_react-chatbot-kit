@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import jsPDF from 'jspdf';
 
 export default function GeneratePdf(props) {
-  useEffect(() => {cd
+  useEffect(() => {
     generatePDF();
   }, []);
 
