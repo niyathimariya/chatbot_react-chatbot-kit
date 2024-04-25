@@ -44,12 +44,6 @@ const ActionProvider = ({ createChatBotMessage, setState, children }) => {
         const message = createChatBotMessage("Next Meeting Location")
         updateState(message,"generatepdf")
     }
-    // const afterAgeMessage = () => {
-    //     const message = createChatBotMessage("do you lean towards a fast and thrilling ride or prefer a more relaxed and comfortable one?", {
-    //         widget: "startSlow"
-    //     })
-    //     updateState(message)
-    // }
 
     const generatepdf = (MeetingNumber, MeetingDate, MeetingTime, MeetingLocation, MeetingAgendas, MeetingDecisions, MeetingSpecialNotes, NextMeetingDate, NextMeetingTime, NextMeetingLocation) => {
         const message = createChatBotMessage(`Got it, ${MeetingNumber}! Based on your age ${MeetingTime} and preference for a ${MeetingDate} ride, I recommend the '${MeetingLocation}.' Enjoy the thrill!`, {
